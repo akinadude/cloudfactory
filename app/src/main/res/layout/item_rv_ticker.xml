@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkGrey"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/text_ticker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/text_last"
+        android:layout_toLeftOf="@+id/text_last"
+        android:layout_centerVertical="true"
+        android:gravity="center|left"
+        android:paddingLeft="40dp"
+        android:text="Name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_last"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/deepBlue"
+        android:text="last"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_highest_bid"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_last"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="highestBid"
+        android:textColor="@color/darkGrey"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_percent_change"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/text_highest_bid"
+        android:layout_toEndOf="@+id/text_ticker_name"
+        android:layout_toRightOf="@+id/text_ticker_name"
+        android:text="percentage_change"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
